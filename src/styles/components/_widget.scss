@@ -1,3 +1,15 @@
+.widget {
+  margin-bottom: 3rem;
+
+  @include mq($from: medium) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .widget__title {
   font-size: 0.75rem;
   letter-spacing: 0;

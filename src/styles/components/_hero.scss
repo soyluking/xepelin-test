@@ -1,8 +1,13 @@
 .hero {
   background-color: $dark;
   color: $white;
+  padding-bottom: 10rem;
   padding-top: 10rem;
   position: relative;
+
+  @include mq($from: medium) {
+    padding-bottom: 0;
+  }
 }
 
 .hero__ellipse {
@@ -37,11 +42,11 @@
 
 .hero__content {
   max-width: 34rem;
-  padding-bottom: 5rem;
   padding-right: 2rem;
   position: relative;
 
   @include mq($from: medium) {
+    padding-bottom: 5rem;
     padding-right: 0;
   }
 }

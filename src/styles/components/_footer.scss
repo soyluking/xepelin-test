@@ -1,7 +1,12 @@
 .footer {
   background-color: $dark;
   color: $white;
-  padding: 6.25rem 0 3rem;
+  padding-top: 3rem;
+
+  @include mq($from: medium) {
+    padding-bottom: 3rem;
+    padding-top: 6.25rem;
+  }
 }
 
 .footer__logo {
@@ -11,16 +16,25 @@
 .footer__text {
   font-size: 0.8125rem;
   line-height: 2.15;
+  margin-bottom: 2.5rem;
   margin-top: 1rem;
   max-width: 22rem;
+
+  @include mq($from: medium) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__legal {
   font-size: 0.75rem;
-  margin-top: 5rem;
+  margin-top: 4.375rem;
   padding: 1.5625rem 0;
   position: relative;
   text-align: center;
+
+  @include mq($from: medium) {
+    margin-top: 5rem;
+  }
 
   &:before {
     background: linear-gradient(93.31deg, #5910bb 0%, #d58bf5 15.63%, $pink 48.96%, $orange 93.23%);
