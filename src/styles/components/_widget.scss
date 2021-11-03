@@ -1,0 +1,31 @@
+.widget__title {
+  font-size: 0.75rem;
+  letter-spacing: 0;
+}
+
+.widget__list {
+  list-style: none;
+  margin: 1.125rem 0 0;
+  padding: 0;
+}
+
+.widget__item {
+  margin-bottom: 0.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.widget__link {
+  color: $white;
+  font-size: 0.75rem;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.widget__social {
+  margin-right: 0.5rem;
+}

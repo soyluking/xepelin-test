@@ -1,0 +1,49 @@
+.hero {
+  background-color: $dark;
+  color: $white;
+  padding-bottom: 0;
+}
+
+.hero__ellipse {
+  border-radius: 50%;
+  filter: blur(200px);
+  pointer-events: none;
+  position: absolute;
+}
+
+.hero__ellipse--1 {
+  background: $purple;
+  height: 21.875rem;
+  left: 2%;
+  opacity: 0.25;
+  top: 8.125rem;
+  width: 20.625rem;
+}
+
+.hero__ellipse--2 {
+  background: $pink;
+  bottom: 3%;
+  height: 29.375rem;
+  right: 3%;
+  width: 27.5rem;
+  opacity: 0.16;
+}
+
+.hero__content {
+  max-width: 34rem;
+  position: relative;
+}
+
+.hero__text {
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+.hero__cta {
+  margin-top: 2rem;
+}
+
+.hero__image {
+  max-width: 36.875rem;
+  position: relative;
+}

@@ -1,0 +1,36 @@
+.header {
+  color: $white;
+  left: 0;
+  padding: 2.8125rem 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.header__logo {
+  max-width: 6.875rem;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .menu-item {
+    margin: 0 1.875rem;
+  }
+
+  .menu-link {
+    color: inherit;
+    font-size: 0.875rem;
+  }
+}
+
+.header__cta {
+  display: flex;
+  justify-content: flex-end;
+
+  .button {
+    margin-left: 1rem;
+  }
+}

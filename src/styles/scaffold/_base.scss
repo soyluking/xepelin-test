@@ -1,0 +1,22 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+figure {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+::selection {
+  background-color: $purple;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $purple;
+  color: $white;
+}

@@ -1,7 +1,16 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
-}
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/vendors';
 
-@import 'variables';
-@import 'scaffolding';
+// Scaffold
+@import 'scaffold/base';
+@import 'scaffold/utilities';
+
+// Components
+@import 'components/button';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/widget';
+@import 'components/hero';
+@import 'components/heading';
+@import 'components/card-icon';

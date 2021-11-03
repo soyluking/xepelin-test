@@ -1,0 +1,42 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 6.25rem 0;
+}
+
+.background-gray {
+  background-color: #fafafa;
+}
+
+.title {
+  font-family: $headings-font-family;
+  font-size: 1rem;
+  font-weight: $headings-font-weight;
+  letter-spacing: -0.02em;
+  line-height: $headings-line-height;
+  margin: 0;
+
+  a {
+    color: inherit;
+  }
+}
+
+.title--xl {
+  font-size: 3.625rem;
+}
+
+.title--l {
+  font-size: 2.5rem;
+}
+
+.title--m {
+  font-size: 1.5rem;
+}
+
+.title--s {
+  font-size: 1.125rem;
+}
