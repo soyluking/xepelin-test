@@ -3,12 +3,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
 figure {
   margin: 0;
 }
 
 p:last-child {
   margin-bottom: 0;
+}
+
+.container {
+  @include mq($until: medium) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 ::selection {

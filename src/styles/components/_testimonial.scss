@@ -1,0 +1,65 @@
+.testimonial {
+  margin-bottom: 1.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.testimonial__button {
+  border-radius: 20px;
+  padding: 1.875rem;
+  transition: 0.3s ease;
+
+  &:after {
+    content: none;
+  }
+
+  &.collapsed {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &:not(.collapsed) {
+    background-color: $white;
+    border: 0;
+    box-shadow: 0px 4px 40px rgba(76, 78, 155, 0.08);
+  }
+}
+
+.testimonial__avatar {
+  max-width: 4.375rem;
+}
+
+.testimonial__user {
+  padding-left: 1.25rem;
+}
+
+.testimonial__name {
+  color: $dark;
+  font-weight: 400;
+  margin-bottom: 0.125rem;
+}
+
+.testimonial__role {
+  color: #9a9a9a;
+  font-size: 1rem;
+}
+
+.testimonial__content {
+  padding: 0 3rem;
+}
+
+.testimonial__ranking {
+  color: #ea8432;
+  margin: 1rem 0;
+}
+
+.testimonial__text {
+  font-size: 0.875rem;
+  line-height: 2.3;
+}
+
+.testimonial__cta {
+  margin-top: 2rem;
+}

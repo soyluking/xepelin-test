@@ -1,14 +1,27 @@
 .header {
   color: $white;
   left: 0;
-  padding: 2.8125rem 0;
+  padding: 1.5625rem 0;
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 10;
+
+  @include mq($from: medium) {
+    padding: 2.8125rem 0;
+  }
 }
 
 .header__logo {
   max-width: 6.875rem;
+}
+
+.header__nav {
+  display: none;
+
+  @include mq($from: medium) {
+    display: block;
+  }
 }
 
 .header__menu {
@@ -27,8 +40,12 @@
 }
 
 .header__cta {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+
+  @include mq($from: medium) {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   .button {
     margin-left: 1rem;

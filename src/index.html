@@ -47,11 +47,11 @@
             </div>
             <div class="col-lg-4">
               <div class="header__cta">
-                <a class="button button--secondary button--border" href="/">
+                <a class="button button--normal button--border" href="/">
                   <span class="button__up">Ingresar</span>
                   <span class="button__down">Ingresar</span>
                 </a>
-                <a class="button button--secondary" href="/">
+                <a class="button button--normal" href="/">
                   <span class="button__up">Regístrate</span>
                   <span class="button__down">Regístrate</span>
                 </a>
@@ -61,7 +61,7 @@
         </div>
       </header>
 
-      <section class="hero section">
+      <section class="hero">
         <div class="hero__ellipse hero__ellipse--1"></div>
         <div class="hero__ellipse hero__ellipse--2"></div>
 
@@ -189,54 +189,66 @@
             </div>
           </header>
 
-          <div class="accordion" id="testimonialsAccordion">
+          <div id="testimonials">
             <div class="row">
               <div class="col-lg-6">
-                <div id="testimonial01">
+                <div class="testimonial" id="testimonial01">
                   <button
-                    class="accordion-button"
+                    class="testimonial__button accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapse01"
                     aria-expanded="true"
                     aria-controls="collapse01"
                   >
-                    <img class="img-fluid" src="//via.placeholder.com/70" alt="" />
-                    <div>
-                      <h4 class="title">Andrés Rosales</h4>
-                      <p>Gerente general de Sacer Spa</p>
+                    <img
+                      class="testimonial__avatar"
+                      src="<%=require('./images/avatar-andres.png')%>"
+                      alt="Foto Andrés Rosales"
+                    />
+                    <div class="testimonial__user">
+                      <h4 class="testimonial__name title title--s">Andrés Rosales</h4>
+                      <p class="testimonial__role">Gerente general de Sacer Spa</p>
                     </div>
                   </button>
                 </div>
-                <div id="testimonial02">
+                <div class="testimonial" id="testimonial02">
                   <button
-                    class="accordion-button collapsed"
+                    class="testimonial__button accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapse02"
                     aria-expanded="false"
                     aria-controls="collapse02"
                   >
-                    <img class="img-fluid" src="//via.placeholder.com/70" alt="" />
-                    <div>
-                      <h4 class="title">Carlos Zapata</h4>
-                      <p>Gerente general de Zapata Ltda</p>
+                    <img
+                      class="testimonial__avatar"
+                      src="<%=require('./images/avatar-carlos.png')%>"
+                      alt="Foto Carlos Zapata"
+                    />
+                    <div class="testimonial__user">
+                      <h4 class="testimonial__name title title--s">Carlos Zapata</h4>
+                      <p class="testimonial__role">Gerente general de Zapata Ltda</p>
                     </div>
                   </button>
                 </div>
-                <div id="testimonial03">
+                <div class="testimonial" id="testimonial03">
                   <button
-                    class="accordion-button collapsed"
+                    class="testimonial__button accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapse03"
                     aria-expanded="false"
                     aria-controls="collapse03"
                   >
-                    <img class="img-fluid" src="//via.placeholder.com/70" alt="" />
-                    <div>
-                      <h4 class="title">Leonardo Moncada</h4>
-                      <p>Ing. y Montajes Cerro Bramador Spa</p>
+                    <img
+                      class="testimonial__avatar"
+                      src="<%=require('./images/avatar-leonardo.png')%>"
+                      alt="Foto Leonardo Moncada"
+                    />
+                    <div class="testimonial__user">
+                      <h4 class="testimonial__name title title--s">Leonardo Moncada</h4>
+                      <p class="testimonial__role">Ing. y Montajes Cerro Bramador Spa</p>
                     </div>
                   </button>
                 </div>
@@ -244,83 +256,113 @@
               <div class="col-lg-6">
                 <div
                   id="collapse01"
-                  class="accordion-collapse collapse show"
+                  class="collapse show"
                   aria-labelledby="testimonial01"
-                  data-bs-parent="#testimonialsAccordion"
+                  data-bs-parent="#testimonials"
                 >
-                  <div class="accordion-body">
-                    <h3>La mejor experiencia</h3>
-                    <div>*****</div>
-                    <p>
-                      “En un principio habíamos pensado en acudir a algún banco, pero el problema es
-                      que necesitábamos una serie de documentos y trámites, pero no nos daba el
-                      tiempo, por eso también estamos muy agradecidos con Xepelin, porque confiaron
-                      en nosotros. Gracias a esta alternativa de financiamiento comenzamos a tener
-                      mas flujo, lo que nos permitió pagar sueldos, cotizaciones e impuestos al día,
-                      además de comprar materiales.”
-                    </p>
-                    <p>
-                      Con tan solo 7 meses de funcionamiento a toda máquina, la empresa de
-                      soluciones de acero SACER ha sabido cómo lidiar con las dificultades que
-                      conlleva el emprender con un negocio de manera autónoma
-                    </p>
-                    <a class="button button--secondary" href="/">
-                      Conoce más <i class="button__icon">></i>
-                    </a>
+                  <div class="testimonial__content">
+                    <h3 class="title title--m">La mejor experiencia</h3>
+                    <div class="testimonial__ranking">
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                    </div>
+                    <div class="testimonial__text">
+                      <p>
+                        “En un principio habíamos pensado en acudir a algún banco, pero el problema
+                        es que necesitábamos una serie de documentos y trámites, pero no nos daba el
+                        tiempo, por eso también estamos muy agradecidos con Xepelin, porque
+                        confiaron en nosotros. Gracias a esta alternativa de financiamiento
+                        comenzamos a tener mas flujo, lo que nos permitió pagar sueldos,
+                        cotizaciones e impuestos al día, además de comprar materiales.”
+                      </p>
+                      <p>
+                        Con tan solo 7 meses de funcionamiento a toda máquina, la empresa de
+                        soluciones de acero SACER ha sabido cómo lidiar con las dificultades que
+                        conlleva el emprender con un negocio de manera autónoma
+                      </p>
+                    </div>
+                    <div class="testimonial__cta">
+                      <a class="button button--secondary" href="/">
+                        Conoce más <span class="button__icon material-icons">navigate_next</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div
                   id="collapse02"
-                  class="accordion-collapse collapse"
+                  class="collapse"
                   aria-labelledby="testimonial02"
-                  data-bs-parent="#testimonialsAccordion"
+                  data-bs-parent="#testimonials"
                 >
-                  <div class="accordion-body">
-                    <h3>La mejor experiencia</h3>
-                    <div>*****</div>
-                    <p>
-                      “En un principio habíamos pensado en acudir a algún banco, pero el problema es
-                      que necesitábamos una serie de documentos y trámites, pero no nos daba el
-                      tiempo, por eso también estamos muy agradecidos con Xepelin, porque confiaron
-                      en nosotros. Gracias a esta alternativa de financiamiento comenzamos a tener
-                      mas flujo, lo que nos permitió pagar sueldos, cotizaciones e impuestos al día,
-                      además de comprar materiales.”
-                    </p>
-                    <p>
-                      Con tan solo 7 meses de funcionamiento a toda máquina, la empresa de
-                      soluciones de acero SACER ha sabido cómo lidiar con las dificultades que
-                      conlleva el emprender con un negocio de manera autónoma
-                    </p>
-                    <a class="button button--secondary" href="/">
-                      Conoce más <i class="button__icon">></i>
-                    </a>
+                  <div class="testimonial__content">
+                    <h3 class="title title--m">La mejor experiencia</h3>
+                    <div class="testimonial__ranking">
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                    </div>
+                    <div class="testimonial__text">
+                      <p>
+                        “En un principio habíamos pensado en acudir a algún banco, pero el problema
+                        es que necesitábamos una serie de documentos y trámites, pero no nos daba el
+                        tiempo, por eso también estamos muy agradecidos con Xepelin, porque
+                        confiaron en nosotros. Gracias a esta alternativa de financiamiento
+                        comenzamos a tener mas flujo, lo que nos permitió pagar sueldos,
+                        cotizaciones e impuestos al día, además de comprar materiales.”
+                      </p>
+                      <p>
+                        Con tan solo 7 meses de funcionamiento a toda máquina, la empresa de
+                        soluciones de acero SACER ha sabido cómo lidiar con las dificultades que
+                        conlleva el emprender con un negocio de manera autónoma
+                      </p>
+                    </div>
+                    <div class="testimonial__cta">
+                      <a class="button button--secondary" href="/">
+                        Conoce más <span class="button__icon material-icons">navigate_next</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div
                   id="collapse03"
-                  class="accordion-collapse collapse"
+                  class="collapse"
                   aria-labelledby="testimonial03"
-                  data-bs-parent="#testimonialsAccordion"
+                  data-bs-parent="#testimonials"
                 >
-                  <div class="accordion-body">
-                    <h3>La mejor experiencia</h3>
-                    <div>*****</div>
-                    <p>
-                      “En un principio habíamos pensado en acudir a algún banco, pero el problema es
-                      que necesitábamos una serie de documentos y trámites, pero no nos daba el
-                      tiempo, por eso también estamos muy agradecidos con Xepelin, porque confiaron
-                      en nosotros. Gracias a esta alternativa de financiamiento comenzamos a tener
-                      mas flujo, lo que nos permitió pagar sueldos, cotizaciones e impuestos al día,
-                      además de comprar materiales.”
-                    </p>
-                    <p>
-                      Con tan solo 7 meses de funcionamiento a toda máquina, la empresa de
-                      soluciones de acero SACER ha sabido cómo lidiar con las dificultades que
-                      conlleva el emprender con un negocio de manera autónoma
-                    </p>
-                    <a class="button button--secondary" href="/">
-                      Conoce más <i class="button__icon">></i>
-                    </a>
+                  <div class="testimonial__content">
+                    <h3 class="title title--m">La mejor experiencia</h3>
+                    <div class="testimonial__ranking">
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                      <span class="material-icons">star</span>
+                    </div>
+                    <div class="testimonial__text">
+                      <p>
+                        “En un principio habíamos pensado en acudir a algún banco, pero el problema
+                        es que necesitábamos una serie de documentos y trámites, pero no nos daba el
+                        tiempo, por eso también estamos muy agradecidos con Xepelin, porque
+                        confiaron en nosotros. Gracias a esta alternativa de financiamiento
+                        comenzamos a tener mas flujo, lo que nos permitió pagar sueldos,
+                        cotizaciones e impuestos al día, además de comprar materiales.”
+                      </p>
+                      <p>
+                        Con tan solo 7 meses de funcionamiento a toda máquina, la empresa de
+                        soluciones de acero SACER ha sabido cómo lidiar con las dificultades que
+                        conlleva el emprender con un negocio de manera autónoma
+                      </p>
+                    </div>
+                    <div class="testimonial__cta">
+                      <a class="button button--secondary" href="/">
+                        Conoce más <span class="button__icon material-icons">navigate_next</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

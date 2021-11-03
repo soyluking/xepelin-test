@@ -1,14 +1,20 @@
 .hero {
   background-color: $dark;
   color: $white;
-  padding-bottom: 0;
+  padding-top: 10rem;
+  position: relative;
 }
 
 .hero__ellipse {
   border-radius: 50%;
+  display: none;
   filter: blur(200px);
   pointer-events: none;
   position: absolute;
+
+  @include mq($from: medium) {
+    display: block;
+  }
 }
 
 .hero__ellipse--1 {
@@ -31,12 +37,23 @@
 
 .hero__content {
   max-width: 34rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
   position: relative;
+
+  @include mq($from: medium) {
+    padding-right: 0;
+  }
 }
 
 .hero__text {
+  font-size: 0.8125rem;
   line-height: 2;
   margin-top: 1rem;
+
+  @include mq($from: medium) {
+    font-size: 1rem;
+  }
 }
 
 .hero__cta {
@@ -44,6 +61,21 @@
 }
 
 .hero__image {
+  display: none;
+  margin-left: auto;
   max-width: 36.875rem;
-  position: relative;
+
+  @include mq($from: medium) {
+    display: block;
+  }
+
+  &:after {
+    background: linear-gradient(270deg, $dark 0%, rgba($dark, 0) 97.65%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+  }
 }

@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=swap');
 
-// $font-size: 1rem;
-// $font-family: 'Poppins', sans-serif;
-// $background-color: #fff;
-// $font-color: #141531;
-
 $white: #fff;
 $black: #000;
 $dark: #141531;
@@ -18,16 +13,7 @@ $orange: #ffbea7;
 // Settings for the `<body>` element.
 
 $body-bg: $white;
-$body-color: #141531;
-
-// Links
-//
-// Style anchor elements.
-
-// $link-color: $primary;
-$link-decoration: none;
-// $link-hover-color: $primary;
-// $link-hover-decoration: none;
+$body-color: $dark;
 
 // Typography
 //
@@ -36,15 +22,20 @@ $link-decoration: none;
 $font-family-base: 'Poppins', sans-serif;
 $font-weight-base: 400;
 $line-height-base: 1.5;
-
-// $font-weight-lighter: lighter;
-// $font-weight-light: 300;
-// $font-weight-normal: 400;
 $font-weight-bold: 600;
-// $font-weight-bolder: 700;
 
 $headings-font-family: $font-family-base;
 $headings-font-weight: 600;
 $headings-line-height: 1.2;
 
 $paragraph-margin-bottom: 1.5rem;
+
+$mq-breakpoints: (
+  mini: 320px,
+  small: 375px,
+  medium: 768px,
+  large: 1024px,
+  laptop: 1280px,
+  huge: 1440px,
+  max: 1920px,
+);
